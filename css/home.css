@@ -1,0 +1,69 @@
+section {
+    padding-top: 90px;
+    padding-right: 22%;
+    width: 80%;
+}
+section .add-product {
+    border: none;
+    background-color: var(--main-color);
+    padding: 12px 17px;
+    color: #FFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+table {
+    margin-top: 20px;
+    font-size: 20px;
+}
+table td {
+    padding: 10px 15px 10px;
+    text-align: center;
+}
+table td:nth-child(1) {
+    padding-right: 0;
+}
+table tbody tr td .product-img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+table tbody tr td button {
+    border: none;
+    color: #FFF;
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: #EEE;
+    box-shadow: 0 0 10px 2px #CCC;
+    cursor: pointer;
+}
+table tbody tr td .edit {
+    color: var(--main-color)
+}
+table tbody tr td .delete {
+    color: rgb(255, 54, 54);
+}
+
+@media (max-width: 700px) {
+    section {width: 85%;padding-right: 18%;}
+    table {font-size: 14px;}
+    section .add-product {font-size: 14px;}
+    table tbody tr td .product-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+    }
+    table thead tr th {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    table td {
+        padding: 10px 5px 10px 0;
+    }
+}
